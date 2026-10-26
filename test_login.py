@@ -29,7 +29,7 @@ def test_invalid_username(page: Page):
         page.goto(LOGIN_URL)
 
     with allure.step("Enter an invalid username"):
-        page.locator("#username").fill("student")
+        page.locator("#username").fill("student123")
         page.locator("#password").fill("Password123")
 
     with allure.step("Submit the login form"):
